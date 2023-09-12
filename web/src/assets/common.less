@@ -1,0 +1,236 @@
+@content_width: 1280px;
+
+@font_base: 14px;
+@font_large: 20px;
+
+@color_blue: #1f90de;
+
+/* common css START */
+html, body{
+  font-size: @font_base;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p, ul, ol, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+}
+ul,ol,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.txt-grey{
+  color: #999;
+}
+.txt_name{
+  // color: red;
+  color: #f7c3a7;
+}
+/* common css END */
+
+/* login.vue */
+.bg{
+  overflow: hidden;
+  height: 100vh;
+  background-image: url("../assets/background.png");
+  background-size: cover;
+  .login, .register{
+    max-width: 90vw;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20vh;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 50px 50px 20px 50px;
+  }
+}
+/* header.vue */
+.header{
+  width: 100%;
+  background: rgba(0, 0, 0);
+  position: fixed;
+  z-index: 10;
+
+  .top_header_content{
+    color: #fff;
+    // border-bottom: 1px solid #f5f5f5;
+    .top_header{
+      display: flex;
+      justify-content: space-between;
+      max-width: @content_width;
+      height: inherit;
+      margin: 0 auto;
+      .left{
+        display: flex;
+        align-items: center;
+        .logo_img{
+          width: 50px;
+          height: 50px;
+        }
+        .logo_dec{
+          margin-left: 10px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+      .right{
+        line-height: 50px;
+        .btn{
+          margin-left: 20px;
+          cursor: pointer;
+        }
+        .upload_btn{
+          cursor: pointer;
+        }
+      }
+    }
+  }  
+}
+/* home.vue */
+.home{
+  width: 100%;
+  background: #f1f1f1;
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  .sub_header_content{
+    background: #fff;
+    .sub_header{
+      max-width: @content_width;
+      margin: 0 auto;
+      color: #fff;
+    }
+  }
+  .home_content{
+    max-width: @content_width;
+    margin: 0 auto;
+    padding: 20px 0;
+    min-height: calc(100vh - 150px);
+    // box-shadow: 1px 1px 10px #eee;
+    display: flex;
+    .left_home{
+      padding-right: 10px;
+      .cur_title{
+        font-size: @font_large;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+        box-sizing: content-box;;
+        height: 36px;
+        line-height: 36px;
+        span{
+          display: inline-block;
+          color: @color_blue;
+          border-bottom: 2px solid @color_blue;
+        }
+      }
+      .lookMore{
+        width: 100%;
+        color: @color_blue;
+        margin: 20px 0;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        span{
+          cursor: pointer;
+        }
+      }
+      width: 60%;
+    }
+    .right_home{
+      flex: 1;
+      position: fixed;
+      top: 70px;
+      padding-top: 50px;
+      padding-left: 50px;
+      // border-left: 1px solid #ccc;
+    }
+  }
+}
+
+/* upload.vue */
+.upload{
+  width: 100%;
+  background: #fff;
+  padding-top: 50px;
+  .upload_content{
+    max-width: @content_width;
+    margin: 0 auto;
+    .file_input{
+      width: 400px;
+      margin-top: 50px;
+    }
+    .files{
+      display: flex;
+      flex-wrap: wrap;
+      max-height: 500px;
+      overflow-y: auto;
+      .file{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background: #5cbbf6;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/* footer.vue */
+.footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 80px;
+  background: #000;
+  .bottom_footer{
+    max-width: @content_width;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+    padding: 15px 0;
+    p{
+      margin: 0;
+    }
+    .beian{
+      color: #fff;
+    }
+  }
+}
+
+
+/* 移动端样式 */
+@media screen and ( max-width: 768px ) {
+  .card_content{
+    flex-direction: column;
+    border-bottom: 1px solid #ccc;
+    .left_img{
+      text-align: center;
+    }
+    .right_con{
+      width: auto;
+      margin: 0 auto;
+    }
+  }
+  .home{
+    .home_content{
+      flex-direction: column-reverse;
+      .left_home{
+        padding-left: 10px;
+        width: 100%;
+      }
+      .right_home{
+        position: relative;
+        left: 0 !important;
+        padding: 5px;
+        top: 0;
+      }
+    }
+  }  
+}

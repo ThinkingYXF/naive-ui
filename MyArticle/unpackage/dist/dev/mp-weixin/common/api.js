@@ -1,0 +1,12 @@
+"use strict";
+const common_http = require("./http.js");
+const request = new common_http.FetchHttp();
+request.baseUrl = "https://thinkingyxf.top/api";
+const toLogin = (params) => request.postData("/openApi/login", params);
+const getMusicList = (params) => request.postData("/openApi/getMusicList", params);
+const getArticleList = (params) => request.postData("/articleList", params);
+const getUserInfo = (params) => request.postData("/userInfo", params);
+exports.getArticleList = getArticleList;
+exports.getMusicList = getMusicList;
+exports.getUserInfo = getUserInfo;
+exports.toLogin = toLogin;

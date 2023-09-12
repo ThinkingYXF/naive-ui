@@ -1,0 +1,65 @@
+.music{
+    // padding: 0 40px;
+    .search_content{
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100upx;
+        .index_search{
+            background-color: #f5f5f5;
+            height: 60upx;
+            margin: 20upx 50upx;
+            display: flex;
+            align-items: center;
+            border-radius: 10upx;
+            padding: 0 30upx;
+            input{
+                margin-left: 10upx;
+            }
+        }
+    }
+    .item_content{
+        margin-top: 120upx;
+        padding: 0 20upx;
+        .item{
+            background-color: #fff;
+            border-radius: 10upx;
+            padding: 20upx;
+            margin-bottom: 20upx;
+            display: flex;
+            justify-content: space-between;
+            .item_left{
+                display: flex;
+                align-items: center;
+                // width: 200upx;
+                // height: 150upx;
+                // margin-right: 20upx;
+                .title{
+                    font-size: 30upx;
+                    font-weight: bold;
+                    margin-right: 10upx;
+                }
+                .desc{
+                    margin-left: 10upx;
+                    color: #aaa;
+                    font-size: 24upx;
+                }
+            }
+            .item_right{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                flex: 1;
+                
+            }
+        }
+        .item.active{
+            .item_left{
+                .title,.desc{
+                    color: #E63C39;
+                }
+            }
+        }
+    }
+}

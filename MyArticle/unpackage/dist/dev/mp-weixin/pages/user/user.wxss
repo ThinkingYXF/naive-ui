@@ -1,0 +1,20 @@
+.user .user_header.data-v-0f7520f0 {
+  padding: 20rpx 30rpx;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+}
+.user .user_header .user_icon.data-v-0f7520f0 {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.user .user_header .user_info.data-v-0f7520f0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.user .user_header .user_info .f_small.data-v-0f7520f0 {
+  font-size: 80%;
+  color: #999;
+}
