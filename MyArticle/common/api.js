@@ -11,5 +11,7 @@ export const toLogin = (params) => request.postData('/openApi/login', params)
 export const getMusicList = (params) => request.postData('/openApi/getMusicList', params)
 //文章列表
 export const getArticleList = (params) => request.postData('/articleList', params)
+//获取文章信息
+export const getArticleInfo = (params) => request.postData('/articleInfo', params)
 //获取个人信息
 export const getUserInfo = (params) => request.postData('/userInfo', params)

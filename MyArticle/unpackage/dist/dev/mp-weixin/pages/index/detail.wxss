@@ -1,0 +1,16 @@
+page.data-v-9e4af262 {
+  background-color: #fff;
+}
+.title.data-v-9e4af262 {
+  text-align: center;
+  margin: 30rpx 0;
+  font-size: 42rpx;
+  font-weight: bold;
+}
+.content.data-v-9e4af262 {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  padding: 20rpx;
+  padding-bottom: 80rpx;
+}

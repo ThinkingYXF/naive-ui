@@ -7,11 +7,17 @@
 			}
 		},
 		{
-			"path": "pages/music/music",
+			"path": "pages/index/detail",
 			"style": {
-				"navigationBarTitleText": "音乐"
+				"navigationBarTitleText": "详情"
 			}
 		},
+		// {
+		// 	"path": "pages/music/music",
+		// 	"style": {
+		// 		"navigationBarTitleText": "音乐"
+		// 	}
+		// },
 		{
 			"path": "pages/user/user",
 			"style": {
@@ -40,12 +46,12 @@
 				"selectedIconPath": "static/home_ed.png",
 				"text": "首页"
 			},
-			{
-				"pagePath": "pages/music/music",
-				"iconPath": "static/music.png",
-				"selectedIconPath": "static/music_ed.png",
-				"text": "音乐"
-			},
+			// {
+			// 	"pagePath": "pages/music/music",
+			// 	"iconPath": "static/music.png",
+			// 	"selectedIconPath": "static/music_ed.png",
+			// 	"text": "音乐"
+			// },
 			{
 				"pagePath": "pages/user/user",
 				"iconPath": "static/user.png",

@@ -7,7 +7,7 @@
 			</view>
 		</view>
 		<view class="item_content">
-			<view class="item" v-for="(item, i) in dataList" :key="i">
+			<view class="item" v-for="(item, i) in dataList" :key="i" @click="goDetail(item)">
 				<image class="item_logo" :src="FILE_URL + item.imgUrl" />
 				<view class="item_right">
 					<view class="title">{{ item.title }}</view>
@@ -64,6 +64,11 @@
 				this.dataList = [];
 				this.getArticle();
 			},
+			goDetail(item){
+				uni.navigateTo({
+					url: `/pages/index/detail?id=${item.id}`
+				})
+			}
 		},
 		onReachBottom() {
 			setTimeout(() => {

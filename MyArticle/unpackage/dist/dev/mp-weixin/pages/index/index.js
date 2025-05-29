@@ -1,7 +1,7 @@
 "use strict";
+const common_vendor = require("../../common/vendor.js");
 const common_api = require("../../common/api.js");
 const common_util = require("../../common/util.js");
-const common_vendor = require("../../common/vendor.js");
 require("../../common/http.js");
 const _sfc_main = {
   data() {
@@ -38,6 +38,11 @@ const _sfc_main = {
       this.form.pageNo = 1;
       this.dataList = [];
       this.getArticle();
+    },
+    goDetail(item) {
+      common_vendor.index.navigateTo({
+        url: `/pages/index/detail?id=${item.id}`
+      });
     }
   },
   onReachBottom() {
@@ -57,7 +62,8 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         a: $data.FILE_URL + item.imgUrl,
         b: common_vendor.t(item.title),
         c: common_vendor.t(item.description),
-        d: i
+        d: i,
+        e: common_vendor.o(($event) => $options.goDetail(item), i)
       };
     }),
     e: common_vendor.t($data.loadmore)

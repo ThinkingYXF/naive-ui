@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/music/music",
+    "pages/index/detail",
     "pages/user/user",
     "pages/login/login"
   ],
@@ -22,12 +22,6 @@
         "iconPath": "static/home.png",
         "selectedIconPath": "static/home_ed.png",
         "text": "首页"
-      },
-      {
-        "pagePath": "pages/music/music",
-        "iconPath": "static/music.png",
-        "selectedIconPath": "static/music_ed.png",
-        "text": "音乐"
       },
       {
         "pagePath": "pages/user/user",

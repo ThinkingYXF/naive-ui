@@ -7,6 +7,9 @@
 				<view class="f_small">{{userInfo.mobile}}</view>
 			</view>
 		</view>
+		<!-- <uni-list>
+			<uni-list-item title="个人信息" link to="/pages/index/index"></uni-list-item>
+		</uni-list> -->
 	</view>
 </template>
 

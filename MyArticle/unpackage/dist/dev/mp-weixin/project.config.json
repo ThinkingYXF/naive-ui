@@ -19,10 +19,27 @@
         "condition": false
     },
     "compileType": "miniprogram",
-    "libVersion": "3.0.2",
+    "libVersion": "",
     "appid": "wx95d03d722b110149",
     "projectname": "MyArticle",
-    "condition": {},
+    "condition": {
+        "search": {
+            "current": -1,
+            "list": []
+        },
+        "conversation": {
+            "current": -1,
+            "list": []
+        },
+        "game": {
+            "current": -1,
+            "list": []
+        },
+        "miniprogram": {
+            "current": -1,
+            "list": []
+        }
+    },
     "editorSetting": {
         "tabIndent": "insertSpaces",
         "tabSize": 4
